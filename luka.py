@@ -1,8 +1,8 @@
 import glob, re, os
 
-path = r"" # Add the direct path to your folder here
+path = r"" # Add the direct path to your folder here e.g. (D:\Downloads\Photos)
 
-for filename in glob.glob( path + '/*'):
+for filename in glob.glob( path + '\\*'):
     pattern = r'(\w{13})(\.jpg)'
     replace = r'.jpg'
     new_name = re.sub(pattern, replace, filename)
